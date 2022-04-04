@@ -6,7 +6,9 @@ const projectsModule = {
 				{
 					id: 1,
 					title: 'Discord bot',
-					img: '_img/psychopass.jpg',
+					img_1: '_img/psychopass.jpg',
+					img_2: '_img/psychopass.jpg',
+					img_3: '_img/psychopass.jpg',
 					link: 'https://github.com/BK-222/discord-bot',
 					gitHub: 'https://github.com/BK-222/discord-bot',
 					tech: 'Node.js'
@@ -14,15 +16,19 @@ const projectsModule = {
 				{
 					id: 2,
 					title: 'Simple playable battle app.',
-					img: '_img/psychopass.jpg',
+					img_1: '_img/psychopass.jpg',
+					img_2: '_img/psychopass.jpg',
+					img_3: '_img/psychopass.jpg',
 					link: 'https://priceless-edison-9dd932.netlify.app/',
 					gitHub: 'https://github.com/BK-222/tms',
 					tech: 'Vue'
 				},
 				{
 					id: 3,
-					img: '_img/psychopass.jpg',
 					title: 'Landing page',
+					img_1: '_img/psychopass.jpg',
+					img_2: '_img/psychopass.jpg',
+					img_3: '_img/psychopass.jpg',
 					link: 'https://bk-222.github.io/animeet/',
 					gitHub: 'https://github.com/BK-222/animeet',
 					tech: 'Plain HTML/CSS with .js scroller'
