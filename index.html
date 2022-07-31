@@ -10,30 +10,32 @@
 	<script src="https://unpkg.com/vue-router@2.0.0/dist/vue-router.js"></script>
 	<script src="https://unpkg.com/vuex@3.6.2"></script>
 </head>
-<body class="bg-slate-900 text-gray-300">
+<body class="bg-slate-900 text-gray-300 -webkit-tap-highlight-color: transparent overflow-y-scroll">
 	
 	<div id="app">
 		<div>
 			<the-header></the-header>
 		</div>
-		<router-view></router-view>
+		<transition name="route" mode="out-in">
+			<router-view></router-view>
+		</transition>
 	</div>
 </body>
 </html>
 
-<script src="components/layout/theHeader.js"></script>
-<script src="components/ui/baseLink.js"></script>
-<script src="components/ui/baseCard.js"></script>
-<script src="components/ui/baseButton.js"></script>
-<script src="components/projects/projectItem.js"></script>
+<script src="components/layout/TheHeader.js"></script>
+<script src="components/ui/BaseLink.js"></script>
+<script src="components/ui/BaseCard.js"></script>
+<script src="components/ui/BaseButton.js"></script>
+<script src="components/projects/ProjectItem.js"></script>
 
 
-<script src="router-pages/notFound.js"></script>
-<script src="router-pages/main/mainPage.js"></script>
-<script src="router-pages/about/aboutPage.js"></script>
-<script src="router-pages/dev-skills/devSkillsPage.js"></script>
-<script src="router-pages/projects/projectsPage.js"></script>
-<script src="router-pages/contact/contactPage.js"></script>
+<script src="router-pages/NotFound.js"></script>
+<script src="router-pages/main/MainPage.js"></script>
+<script src="router-pages/about/AboutPage.js"></script>
+<script src="router-pages/dev-skills/DevSkillsPage.js"></script>
+<script src="router-pages/projects/ProjectsPage.js"></script>
+<script src="router-pages/contact/ContactPage.js"></script>
 
 <script src="vuex/modules/projects.js"></script>
 
@@ -50,6 +52,7 @@
 
 	.bg-slate-900 { background-color: #0f172a; }
 	.bg-slate-800 { background-color: #1e293b; }
+	.bg-cyan-500 { background-color: #2dd4bf; }
 	.bg-cyan-300 { background-color: #a5f3fc; }
 	.hover-bg-cyan-500:hover { background-color: rgba(45, 212, 191, 0.2) }
 
@@ -68,5 +71,31 @@
 	/*#rose, fuchsia, violet, lightblue, cyan, teal, lime, amber, warm-gray, true-gray, cool-gray, blue-gray*/
 
 	/*purple, sky, emerald, orange, stone, neutral, zinc, slate*/
+
+
+	/*router*/
+	.route-enter {
+		opacity: 0;
+		/*transform: translateY(-30px);*/
+	}
+
+	.route-leave-to {
+		opacity: 0;
+		/*transform: translateY(30px);*/
+	}
+
+	.route-enter-active {
+		transition: all 0.25s ease-out;
+	}
+
+	.route-leave-active {
+		transition: all 0.25s ease-in;
+	}
+
+	.route-enter-to, .route-leave {
+		/*opacity: 0;*/
+		opacity: 0.5 ease-in;
+		transform: translateY(0);
+	}
 
 </style>

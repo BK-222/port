@@ -1,7 +1,7 @@
 const projectsPage = {
 	template:
 	'<div>\
-		This is a projects page.\
+		<h3 class="text-xl">List of some of the projects.</h3>\
 			<ul>\
 				<project-item v-for="project in projects"\
 					:key="project.id"\
