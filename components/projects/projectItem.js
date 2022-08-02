@@ -10,7 +10,7 @@ Vue.component('project-item', {
 			</div>\
 			<base-link external><a :href="link">link</a></base-link>\
 			<base-link external><a :href="gitHub">code</a></base-link>\
-			<p class="font-semibold">{{ tech }}</p>\
+			<p class="mt-1 font-semibold">{{ tech }}</p>\
 		</base-card>\
 	</div>',
 	props: {

@@ -1,7 +1,8 @@
 const devSkillsPage = {
 	template:
-	'<div>\
-		This is a Dev.Skills page.\
+	'<div class="flex flex-col items-center">\
+		<h3 class="text-xl">#03. Dev. Skills</h3>\
+		<h4>Some of the technologies I utilize</h4>\
 		<base-card class="flex">\
 			<ul>\
 			<div class="flex items-center py-0.5">\
