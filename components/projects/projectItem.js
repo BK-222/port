@@ -4,7 +4,7 @@ Vue.component('project-item', {
 		<base-card class="group transition delay-75 border border-transparent hover-border-cyan-500">\
 			<h3 class="mb-2 text-lg font-bold group-hover-text-cyan-500 delay-100">{{ title }}</h3>\
 			<div class="flex my-3.5">\
-				<div class="bg-norepeat bg-cover bg-center h-16 w-24 mr-3 filter grayscale hover:grayscale-0" :style="{ \'background-image\': `url(${img_1})` }"></div>\
+				<div class="bg-norepeat bg-cover bg-center h-16 w-24 mr-3 filter grayscale hover:filter-none" :style="{ \'background-image\': `url(${img_1})` }"></div>\
 				<div class="bg-norepeat bg-cover bg-center h-16 w-24 mr-3" :style="{ \'background-image\': `url(${img_2})` }"></div>\
 				<div class="bg-norepeat bg-cover bg-center h-16 w-24" :style="{ \'background-image\': `url(${img_3})` }"></div>\
 			</div>\

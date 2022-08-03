@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Kai Dev.</title>
 	<link href="https://unpkg.com/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
 	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
 	<!-- <script src="../../vue.js"></script> -->
@@ -19,11 +19,13 @@
 		<transition name="route" mode="out-in">
 			<router-view></router-view>
 		</transition>
+		<!-- <the-footer></the-footer> -->
 	</div>
 </body>
 </html>
 
 <script src="components/layout/TheHeader.js"></script>
+<script src="components/layout/TheFooter.js"></script>
 <script src="components/ui/BaseLink.js"></script>
 <script src="components/ui/BaseCard.js"></script>
 <script src="components/ui/BaseButton.js"></script>
@@ -102,6 +104,10 @@
 
 	.router-link-active {
 		color: #2dd4bf;
+	}
+
+	.router-link-active > base-link {
+		background-color: black;
 	}
 
 

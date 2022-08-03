@@ -9,6 +9,7 @@ new Vue({
 	router: router,
 	components: {
 		'theHeader': theHeader
+		// 'theFooter': theFooter
 	}
 	//render: h => (App)
 })//.$mount.('#app');
