@@ -32,6 +32,16 @@ const projectsModule = {
 					link: 'https://bk-222.github.io/animeet/',
 					gitHub: 'https://github.com/BK-222/animeet',
 					tech: 'Plain HTML/CSS with .js scroller'
+				},
+				{
+					id: 4,
+					title: 'A Small Register/Book Practice Project',
+					img_1: '_img/screens/prac_1.png',
+					img_2: '_img/screens/prac_2.png',
+					img_3: '_img/screens/prac_3.png',
+					link: 'https://github.com/BK-222/akiba-place',
+					gitHub: 'https://github.com/BK-222/akiba-place',
+					tech: 'MEVN'
 				}
 			]
 		}

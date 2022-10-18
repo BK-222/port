@@ -8,7 +8,7 @@ const devSkillsPage = {
 				<ul>\
 				<div class="flex items-center py-0.5">\
 					<img class="h-5 w-5 bg-cyan-500" src="_img/favicons/js.svg">\
-					<li class="ml-1">JavaScript (ES6)</li>\
+					<li class="ml-1">JavaScript (ES6+)</li>\
 				</div>\
 				<div class="flex items-center py-0.5">\
 					<img class="h-5 w-5 bg-cyan-500" src="_img/favicons/vue.svg">\
